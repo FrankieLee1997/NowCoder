@@ -18,14 +18,16 @@ public class code13 {
                 begin ++;
             while (isEven(array[end]))
                 end --;
-            int temp = array[begin];
-            array[begin] = array[end];
-            array[end] = temp;
+            if(begin < end) {
+                int temp = array[begin];
+                array[begin] = array[end];
+                array[end] = temp;
+            }
         }
     }
 
     public static void main(String[] args){
-        int[] array  ={3, 4, 6, 5, 1, 7, 8, 11, 10};
+        int[] array  ={3, 4, 6, 5, 2, 7, 8, 11, 10};
         System.out.println(Arrays.toString(array));
         code13 code13 = new code13();
         code13.reOrder(array);
