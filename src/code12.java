@@ -1,3 +1,5 @@
+// 优化方法，转二进制方法
+
 public class code12 {
     public float expo(double base, int exponent){
         float num = 1;
